@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitBrustWebpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <section class="container m-auto">
+        <div class="navbar bg-red-400 rounded-full mt-5 px-7">
+            <div class="navbar-start">
+                <div class="lg:flex items-center space-x-4 text-xl text-white hidden">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">All Fruits</a>
+                </div>
+                <div class="lg:hidden navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <div class="flex items-center gap-3">
+                    <img src="./images/logo.png" alt="">
+                    <a class="text-3xl font-bold text-white">Fruit Burst</a>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="lg:flex p-4 bg-white rounded-full hidden">
+                    <input class="rounded-xl px-7" type="search" name="" id="" placeholder="Your Search Box">
+                    <img class="w-5" src="search.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container m-auto mt-8">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.1)],url(images/banner1.png)] ">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+</body>
+
+</html>
