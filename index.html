@@ -2,278 +2,519 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FruitBrustWebpage</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FruitBrustWebpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <!-- Navigation Section -->
-    <section class="container mx-auto lg:px-24 px-8">
-        <div class="navbar bg-red-400 rounded-full mt-5 px-7">
-            <div class="navbar-start">
-                <div class="lg:flex items-center space-x-4 text-xl text-white hidden">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Shop</a>
-                    <a href="#">All Fruits</a>
-                </div>
-                <div class="lg:hidden navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="navbar-center">
-                <div class="flex items-center gap-3">
-                    <img src="./images/logo.png" alt="">
-                    <a class="text-xl md:text-3xl font-bold text-white">Fruit Burst</a>
-                </div>
-            </div>
-            <div class="navbar-end">
-                <div class="lg:flex p-4 bg-white rounded-full hidden">
-                    <input class="rounded-xl px-7" type="search" name="" id="" placeholder="Your Search Box">
-                    <img class="w-5" src="search.svg" alt="">
-                </div>
-            </div>
+  <!-- Navigation Section -->
+  <section class="container mx-auto lg:px-24 px-8">
+    <div class="navbar bg-red-400 rounded-full mt-5 px-7">
+      <div class="navbar-start">
+        <div class="lg:flex items-center space-x-4 text-xl text-white hidden">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Shop</a>
+          <a href="#">All Fruits</a>
         </div>
-    </section>
-    <!-- carousel all -->
-    <section>
-      <!-- carousel start -->
-        <div class="container mx-auto my-8  lg:px-24 px-8">
-          <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner1.png)] bg-cover h-[60vh]">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-              <div class="text-white text-center m-auto space-y-5">
-                <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                <p class="opacity-95">We supply highly quality organic products</p>
-                <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner2.png)] bg-cover h-[60vh]">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-              <div class="text-white text-center m-auto space-y-5">
-                <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                <p class="opacity-95">We supply highly quality organic products</p>
-                <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner3.png)] bg-cover h-[60vh]">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-              <div class="text-white text-center m-auto space-y-5">
-                <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                <p class="opacity-95">We supply highly quality organic products</p>
-                <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner4.png)] bg-cover h-[60vh]">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-              <div class="text-white text-center m-auto space-y-5">
-                <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                <p class="opacity-95">We supply highly quality organic products</p>
-                <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
-              </div>
+        <div class="lg:hidden navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
             </div>
-          </div>
-          <!-- carousel between -->
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-5 bg-white w-3/4 m-auto rounded-xl p-3 md:-translate-y-20">
-            <div class="flex justify-center">
-              <figure>
-                <img src="./images/fruit1.png" alt="fruit1">
-                <figcaption class="font-semibold text-center">Grapes</figcaption>
-              </figure>
-            </div>
-            <div class="flex justify-center">
-              <figure>
-                <img src="./images/fruit2.png" alt="fruit2">
-                <figcaption class="font-semibold text-center">Orange</figcaption>
-              </figure>
-            </div>
-            <div class="flex justify-center">
-              <figure>
-                <img src="./images/fruit3.png" alt="fruit3">
-                <figcaption class="font-semibold text-center">Mango</figcaption>
-              </figure>
-            </div>
-            <div class="flex justify-center">
-              <figure>
-                <img src="./images/fruit4.png" alt="fruit4">
-                <figcaption class="font-semibold text-center">Strawberry</figcaption>
-              </figure>
-            </div>
-            <div class="flex justify-center">
-              <figure>
-                <img src="./images/fruit5.png" alt="fruit5">
-                <figcaption class="font-semibold text-center">Pomegranate seed</figcaption>
-              </figure>
-            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
           </div>
         </div>
-        <!-- carousel end -->
-    </section>
-    <!-- Dealing  & time counting -->
-    <section>
-      <div class="container mx-auto my-8  lg:px-24 px-8 md:flex items-center md:space-x-96">
+      </div>
+      <div class="navbar-center">
+        <div class="flex items-center gap-3">
+          <img src="./images/logo.png" alt="">
+          <a class="text-xl md:text-3xl font-bold text-white">Fruit Burst</a>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="lg:flex p-4 bg-white rounded-full hidden">
+          <input class="rounded-xl px-7" type="search" name="" id="" placeholder="Your Search Box">
+          <img class="w-5" src="search.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- carousel all -->
+  <section>
+    <!-- carousel start -->
+    <div class="container mx-auto my-8  lg:px-24 px-8">
+      <div class="carousel w-full">
+        <div id="slide1"
+          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner1.png)] bg-cover h-[60vh]">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-white text-center m-auto space-y-5">
+            <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+            <p class="opacity-95">We supply highly quality organic products</p>
+            <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide2"
+          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner2.png)] bg-cover h-[60vh]">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-white text-center m-auto space-y-5">
+            <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+            <p class="opacity-95">We supply highly quality organic products</p>
+            <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide3"
+          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner3.png)] bg-cover h-[60vh]">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-white text-center m-auto space-y-5">
+            <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+            <p class="opacity-95">We supply highly quality organic products</p>
+            <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
+          </div>
+        </div>
+        <div id="slide4"
+          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(17,17,17,0.0),rgba(17,17,17,0.8)),url(images/banner4.png)] bg-cover h-[60vh]">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-white text-center m-auto space-y-5">
+            <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+            <p class="opacity-95">We supply highly quality organic products</p>
+            <button class="text-white bg-red-400 text-xl font-bold p-3 rounded-md">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- carousel between -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-5 bg-white w-3/4 m-auto rounded-xl p-3 md:-translate-y-20">
+        <div class="flex justify-center">
+          <figure>
+            <img src="./images/fruit1.png" alt="fruit1">
+            <figcaption class="font-semibold text-center">Grapes</figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-center">
+          <figure>
+            <img src="./images/fruit2.png" alt="fruit2">
+            <figcaption class="font-semibold text-center">Orange</figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-center">
+          <figure>
+            <img src="./images/fruit3.png" alt="fruit3">
+            <figcaption class="font-semibold text-center">Mango</figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-center">
+          <figure>
+            <img src="./images/fruit4.png" alt="fruit4">
+            <figcaption class="font-semibold text-center">Strawberry</figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-center">
+          <figure>
+            <img src="./images/fruit5.png" alt="fruit5">
+            <figcaption class="font-semibold text-center">Pomegranate seed</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+  </section>
+  <!-- Dealing  & time counting -->
+  <section class="container mx-auto my-8 lg:px-24 px-8">
+    <div class="mb-36 md:flex items-center md:space-x-96">
+      <div>
+        <h2 class="text-4xl py-4 font-bold">Deal of the day</h2>
+        <p class="opacity-80">Contrary to popular belief, is not simply random text. It has roots in a piece of
+          classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <div>
+        <div class="md:grid grid-flow-col gap-5 text-center auto-cols-max hidden">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>:
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>:
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>:
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:32;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- each item price section (card section) -->
+  <section class="container mx-auto my-8 lg:px-24 px-8 grid grid-cols-1 md:grid-cols-4 gap-7 ">
+    <div class="border-2 flex flex-col items-center p-3">
+      <div class="space-y-4 text-center">
+        <figure class="space-y-3">
+          <img src="./images/fruit6.png" alt="">
+          <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
+        </figure>
+        <hr>
+        <p class="opacity-80">Apples</p>
+        <div class="rating rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+      </div>
+      <button class="text-red-400 font-semibold">Details</button>
+    </div>
+    <div class="border-2 flex flex-col items-center p-3">
+      <div class="space-y-4 text-center">
+        <figure class="space-y-3">
+          <img src="./images/fruit7.png" alt="">
+          <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
+        </figure>
+        <hr>
+        <p class="opacity-80">Orange</p>
+        <div class="rating rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+      </div>
+      <button class="text-red-400 font-semibold">Details</button>
+    </div>
+    <div class="border-2 flex flex-col items-center p-3">
+      <div class="space-y-4 text-center">
+        <figure class="space-y-3">
+          <img src="./images/fruit8.png" alt="">
+          <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
+        </figure>
+        <hr>
+        <p class="opacity-80">Red Dragon</p>
+        <div class="rating rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+      </div>
+      <button class="text-red-400 font-semibold">Details</button>
+    </div>
+    <div class="border-2 flex flex-col items-center p-3">
+      <div class="space-y-4 text-center">
+        <figure class="space-y-3">
+          <img src="./images/fruit9.png" alt="">
+          <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
+        </figure>
+        <hr>
+        <p class="opacity-80">Banana</p>
+        <div class="rating rating-half">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+      </div>
+      <button class="text-red-400 font-semibold">Details</button>
+    </div>
+  </section>
+  <!-- sell all button section -->
+  <section class="container mx-auto lg:px-24 px-8 my-10 flex justify-center">
+    <button class="bg-red-400 rounded-xl py-3 px-5 font-semibold text-white mt-6 mb-14 ">See All</button>
+  </section>
+  <section class="container mx-auto lg:px-24 px-8 mb-32">
+    <div
+      class="bg-[linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url(images/team.png)] bg-cover h-[70vh] rounded-xl">
+      <div class="text-center text-white p-32">
         <div>
-          <h2 class="text-4xl py-4 font-bold">Deal of the day</h2>
-          <p class="opacity-80">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h2 class="text-4xl font-bold py-5">Meet the team section</h2>
+          <p class="opacity-90 pb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of
+           <br> classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div>
-          <div class="md:grid grid-flow-col gap-5 text-center auto-cols-max hidden">
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:15;"></span>:
-              </span>
-              days
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:10;"></span>:
-              </span>
-              hours
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:24;"></span>:
-              </span>
-              min
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:32;"></span>
-              </span>
-              sec
+        <div class="grid grid-cols-4 py-4">
+          <div class="text-white flex flex-col items-center justify-center">
+            <figure class="flex flex-col items-center">
+              <img src="images/member1.png" alt="member1" class="py-2 w-36">
+              <figcaption class="text-2xl font-semibold">Awlad Hossain</figcaption>
+            </figure>
+            <p class="text-xl p-2">Fruits Expert</p>
+            <div class="flex space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <defs>
+                  <linearGradient x1="10.341" y1="8.312" x2="40.798" y2="38.769" gradientUnits="userSpaceOnUse"
+                    id="color-1_5MQ0gPAYYx7a_gr1">
+                    <stop offset="0" stop-color="#fa5252"></stop>
+                    <stop offset="1" stop-color="#fa5252"></stop>
+                  </linearGradient>
+                </defs>
+                <g fill="url(#color-1_5MQ0gPAYYx7a_gr1)" fill-rule="nonzero" stroke="none" stroke-width="1"
+                  stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                  stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M46.105,11.02c-1.551,0.687 -3.219,1.145 -4.979,1.362c1.789,-1.062 3.166,-2.756 3.812,-4.758c-1.674,0.981 -3.529,1.702 -5.502,2.082c-1.576,-1.67 -3.824,-2.706 -6.314,-2.706c-4.783,0 -8.661,3.843 -8.661,8.582c0,0.671 0.079,1.324 0.226,1.958c-7.196,-0.361 -13.579,-3.782 -17.849,-8.974c-0.75,1.269 -1.172,2.754 -1.172,4.322c0,2.979 1.525,5.602 3.851,7.147c-1.42,-0.043 -2.756,-0.438 -3.926,-1.072c0,0.026 0,0.064 0,0.101c0,4.163 2.986,7.63 6.944,8.419c-0.723,0.198 -1.488,0.308 -2.276,0.308c-0.559,0 -1.104,-0.063 -1.632,-0.158c1.102,3.402 4.299,5.889 8.087,5.963c-2.964,2.298 -6.697,3.674 -10.756,3.674c-0.701,0 -1.387,-0.04 -2.065,-0.122c3.837,2.429 8.39,3.852 13.278,3.852c15.927,0 24.641,-13.079 24.641,-24.426c0,-0.372 -0.012,-0.742 -0.029,-1.108c1.7,-1.201 3.165,-2.715 4.322,-4.446">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="text-white flex flex-col items-center justify-center">
+            <figure class="flex flex-col items-center">
+              <img src="images/member2.png" alt="member1" class="py-2 w-36">
+              <figcaption class="text-2xl font-semibold">Safia Chowdhury</figcaption>
+            </figure>
+            <p class="text-xl p-2">Fruits Expert</p>
+            <div class="flex space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <defs>
+                  <linearGradient x1="10.341" y1="8.312" x2="40.798" y2="38.769" gradientUnits="userSpaceOnUse"
+                    id="color-1_5MQ0gPAYYx7a_gr1">
+                    <stop offset="0" stop-color="#fa5252"></stop>
+                    <stop offset="1" stop-color="#fa5252"></stop>
+                  </linearGradient>
+                </defs>
+                <g fill="url(#color-1_5MQ0gPAYYx7a_gr1)" fill-rule="nonzero" stroke="none" stroke-width="1"
+                  stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                  stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M46.105,11.02c-1.551,0.687 -3.219,1.145 -4.979,1.362c1.789,-1.062 3.166,-2.756 3.812,-4.758c-1.674,0.981 -3.529,1.702 -5.502,2.082c-1.576,-1.67 -3.824,-2.706 -6.314,-2.706c-4.783,0 -8.661,3.843 -8.661,8.582c0,0.671 0.079,1.324 0.226,1.958c-7.196,-0.361 -13.579,-3.782 -17.849,-8.974c-0.75,1.269 -1.172,2.754 -1.172,4.322c0,2.979 1.525,5.602 3.851,7.147c-1.42,-0.043 -2.756,-0.438 -3.926,-1.072c0,0.026 0,0.064 0,0.101c0,4.163 2.986,7.63 6.944,8.419c-0.723,0.198 -1.488,0.308 -2.276,0.308c-0.559,0 -1.104,-0.063 -1.632,-0.158c1.102,3.402 4.299,5.889 8.087,5.963c-2.964,2.298 -6.697,3.674 -10.756,3.674c-0.701,0 -1.387,-0.04 -2.065,-0.122c3.837,2.429 8.39,3.852 13.278,3.852c15.927,0 24.641,-13.079 24.641,-24.426c0,-0.372 -0.012,-0.742 -0.029,-1.108c1.7,-1.201 3.165,-2.715 4.322,-4.446">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="text-white flex flex-col items-center justify-center">
+            <figure class="flex flex-col items-center">
+              <img src="images/member3.png" alt="member1" class="py-2 w-36">
+              <figcaption class="text-2xl font-semibold">Rokib Hossain</figcaption>
+            </figure>
+            <p class="text-xl p-2">Fruits Expert</p>
+            <div class="flex space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <defs>
+                  <linearGradient x1="10.341" y1="8.312" x2="40.798" y2="38.769" gradientUnits="userSpaceOnUse"
+                    id="color-1_5MQ0gPAYYx7a_gr1">
+                    <stop offset="0" stop-color="#fa5252"></stop>
+                    <stop offset="1" stop-color="#fa5252"></stop>
+                  </linearGradient>
+                </defs>
+                <g fill="url(#color-1_5MQ0gPAYYx7a_gr1)" fill-rule="nonzero" stroke="none" stroke-width="1"
+                  stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                  stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M46.105,11.02c-1.551,0.687 -3.219,1.145 -4.979,1.362c1.789,-1.062 3.166,-2.756 3.812,-4.758c-1.674,0.981 -3.529,1.702 -5.502,2.082c-1.576,-1.67 -3.824,-2.706 -6.314,-2.706c-4.783,0 -8.661,3.843 -8.661,8.582c0,0.671 0.079,1.324 0.226,1.958c-7.196,-0.361 -13.579,-3.782 -17.849,-8.974c-0.75,1.269 -1.172,2.754 -1.172,4.322c0,2.979 1.525,5.602 3.851,7.147c-1.42,-0.043 -2.756,-0.438 -3.926,-1.072c0,0.026 0,0.064 0,0.101c0,4.163 2.986,7.63 6.944,8.419c-0.723,0.198 -1.488,0.308 -2.276,0.308c-0.559,0 -1.104,-0.063 -1.632,-0.158c1.102,3.402 4.299,5.889 8.087,5.963c-2.964,2.298 -6.697,3.674 -10.756,3.674c-0.701,0 -1.387,-0.04 -2.065,-0.122c3.837,2.429 8.39,3.852 13.278,3.852c15.927,0 24.641,-13.079 24.641,-24.426c0,-0.372 -0.012,-0.742 -0.029,-1.108c1.7,-1.201 3.165,-2.715 4.322,-4.446">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="text-white flex flex-col items-center justify-center">
+            <figure class="flex flex-col items-center">
+              <img src="images/member4.png" alt="member1" class="py-2 w-36">
+              <figcaption class="text-2xl font-semibold">Chaity</figcaption>
+            </figure>
+            <p class="text-xl p-2">Fruits Expert</p>
+            <div class="flex space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <defs>
+                  <linearGradient x1="10.341" y1="8.312" x2="40.798" y2="38.769" gradientUnits="userSpaceOnUse"
+                    id="color-1_5MQ0gPAYYx7a_gr1">
+                    <stop offset="0" stop-color="#fa5252"></stop>
+                    <stop offset="1" stop-color="#fa5252"></stop>
+                  </linearGradient>
+                </defs>
+                <g fill="url(#color-1_5MQ0gPAYYx7a_gr1)" fill-rule="nonzero" stroke="none" stroke-width="1"
+                  stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                  stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M46.105,11.02c-1.551,0.687 -3.219,1.145 -4.979,1.362c1.789,-1.062 3.166,-2.756 3.812,-4.758c-1.674,0.981 -3.529,1.702 -5.502,2.082c-1.576,-1.67 -3.824,-2.706 -6.314,-2.706c-4.783,0 -8.661,3.843 -8.661,8.582c0,0.671 0.079,1.324 0.226,1.958c-7.196,-0.361 -13.579,-3.782 -17.849,-8.974c-0.75,1.269 -1.172,2.754 -1.172,4.322c0,2.979 1.525,5.602 3.851,7.147c-1.42,-0.043 -2.756,-0.438 -3.926,-1.072c0,0.026 0,0.064 0,0.101c0,4.163 2.986,7.63 6.944,8.419c-0.723,0.198 -1.488,0.308 -2.276,0.308c-0.559,0 -1.104,-0.063 -1.632,-0.158c1.102,3.402 4.299,5.889 8.087,5.963c-2.964,2.298 -6.697,3.674 -10.756,3.674c-0.701,0 -1.387,-0.04 -2.065,-0.122c3.837,2.429 8.39,3.852 13.278,3.852c15.927,0 24.641,-13.079 24.641,-24.426c0,-0.372 -0.012,-0.742 -0.029,-1.108c1.7,-1.201 3.165,-2.715 4.322,-4.446">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#fa5252" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- each item price section (card section) -->
-    <section class="container mx-auto my-8  lg:px-24 px-8 grid grid-cols-1 md:grid-cols-4 gap-7 ">
-      <div class="border-2 flex flex-col items-center p-3">
-        <div class="space-y-4 text-center">
-          <figure class="space-y-3">
-            <img src="./images/fruit6.png" alt="">
-            <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
-          </figure>
-          <hr>
-          <p class="opacity-80">Apples</p>
-          <div class="rating rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-          </div>
-        </div>
-        <button class="text-red-400 font-semibold">Details</button>
-      </div>
-      <div class="border-2 flex flex-col items-center p-3">
-        <div class="space-y-4 text-center">
-          <figure class="space-y-3">
-            <img src="./images/fruit7.png" alt="">
-            <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
-          </figure>
-          <hr>
-          <p class="opacity-80">Orange</p>
-          <div class="rating rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-          </div>
-        </div>
-        <button class="text-red-400 font-semibold">Details</button>
-      </div>
-      <div class="border-2 flex flex-col items-center p-3">
-        <div class="space-y-4 text-center">
-          <figure class="space-y-3">
-            <img src="./images/fruit8.png" alt="">
-            <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
-          </figure>
-          <hr>
-          <p class="opacity-80">Red Dragon</p>
-          <div class="rating rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-          </div>
-        </div>
-        <button class="text-red-400 font-semibold">Details</button>
-      </div>
-      <div class="border-2 flex flex-col items-center p-3">
-        <div class="space-y-4 text-center">
-          <figure class="space-y-3">
-            <img src="./images/fruit9.png" alt="">
-            <figcaption class="font-bold">12.90$ - 18.85$</figcaption>
-          </figure>
-          <hr>
-          <p class="opacity-80">Banana</p>
-          <div class="rating rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-          </div>
-        </div>
-        <button class="text-red-400 font-semibold">Details</button>
-      </div>
-    </section>
+    </div>
+  </section>
 </body>
 
 </html>
